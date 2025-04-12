@@ -1,0 +1,3 @@
+# Ignore raw data files
+*.csv
+*.sas7bdat
