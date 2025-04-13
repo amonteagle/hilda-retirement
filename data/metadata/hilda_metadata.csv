@@ -1,0 +1,121 @@
+﻿Group,Variable,Description,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22
+Identifier,waveid,Cross wave ID,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Background,hgsex,Sex,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Background,hhiage,Age,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Background,anbcob,Country of birth,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Background,aneab,How well speaks English,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Background,edhigh1,Highest education level achieved,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Employment,esempdt,Current employment status,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Employment,jbhruc,Hours per week usually worked in all jobs,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Employment,jbmo61,Occupation group 1-digit ANZSCO 2006,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Employment,jbmi61,Current main job industry. ANZSIC 2006 division,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Retirement,rtage,History: Age retired/intends to retire,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Retirement,sartpw,Retired completely from paid work,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Retirement,rtcomp,Retired completely from the workforce,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+Retirement,rtcompn,Retired completely from the workforce,0,0,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+Retirement,rtcage,At what age did you completely retire,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement,rtpage,At what age do you consider you became partially retired,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+Family,mrcms,Current marital status,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Family,tcr,Number of own resident children,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Family,gcecf,How often do you take care of your grandchildren,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Family,hencam,Main carer of non-resident person(s),0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Family,hercam,Main carer of resident person(s),0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Family,lshrcar,Hours per week - Caring for disabled spouse/relative,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Family,hhtype,Household type,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,ledfr,Life events in past year: Death of a close friend,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,ledhm,"Life events in past year: A weather related disaster (flood, bushfire, cyclone) damaged or destroyed your home",0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,ledrl,Life events in past year: Death of close relative/family member,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,ledsc,Life events in past year: Death of spouse or child,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lefni,Life events in past year: Major improvement in finances,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lefnw,Life events in past year: Major worsening in finances,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lefrd,Life events in past year: Fired or made redundant,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,leinf,Life events in past year: Serious injury/illness to family member,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,leins,Life events in past year: Serious personal injury/illness,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lejob,Life events in past year: Changed jobs,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lemar,Life events in past year: Got married,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lemvd,Life events in past year: Changed residence,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,leprm,Life events in past year: Promoted at work,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lercl,Life events in past year: Got back together with spouse,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lertr,Life events in past year: Retired from the workforce,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Major Life Events,lesep,Life events in past year: Separated from spouse,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hsmgpd,Has household completely paid off home loans,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hstenr,"Own, Rent or live rent free",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hsfrea,How housing is provided if not an owner or renting,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hsllord,Who does this household rent from,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hhsad10,SEIFA 2011 Decile of Index of relative socio-economic advantage/disadvantage,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hhsec10,DV: SEIFA 2011 Decile of Index of economic resources,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hhsed10,DV: SEIFA 2011 Decile of Index of education and occupation,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Housing,hhsra,DV: ASGS 2011 Remoteness Area (RA),1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Lifestyle,lsinthm,Has access to the internet at home,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+Health,gh1,Self-assessed health,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Health,helth,Long term health condition,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Health,helthwk,Does condition limit the type or amount of work you can do,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Income,bncap,Do you currently receive the Age Pension from the Australian federal government,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Income,bncdsp,Do you currently receive any of these government pensions or allowances - Disability Support Pension,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Income,wsfei,DV: Financial year gross wages & salary ($) [imputed] [weighted topcode],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Income,wsfes,DV: Financial year gross wages & salary ($) [imputed][inc salary sacrifice] [weighted topcode],0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+Income,bncpeni,DV: Current weekly Australian Government Pensions ($) [imputed],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Wealth - Home,hsdebti,DV: Total Home Debt ($) [imputed] [weighted topcode],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Wealth - Home,hsvalui,DV: Home value ($) [imputed] [weighted topcode],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Wealth - Superannuation,sacfnd,"Have capital in any super, allocated pension, roll-over or capital-annuity funds",0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Superannuation,sacfnda,Total value of capital in all these funds [weighted topcode],0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Superannuation,saest,Best estimate of superannuation value [weighted topcode],0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Superannuation,savaln2,Value of all super funds,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Superannuation,pwsupri,"DV: Superannuation, retirees [imputed] ($) [weighted topcode]",0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Superannuation,pwsuprt,"DV: Superannuation, retirees ($) [weighted topcode]",0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Superannuation,pwsupwi,"DV: Superannuation, non-retirees [imputed] ($) [weighted topcode]",0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Superannuation,pwsupwk,"DV: Superannuation, non-retirees ($) [weighted topcode]",0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,opchk,Check does household own more than one other property,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,opdt,Total amount of remaining debt on other properties [weighted topcode],0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,opnum,"Number of other properties owned, excluding house live in",0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,oprntn,How many of other properties earned rent during last 12 months,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,oprnty,Was rental income earned from other properties during last 12 months,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,opt2hnr,Household member owns other property: Second home / holiday house not rented out,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,opt2hr,Household member owns other property: Second home / holiday house also rented out,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optcomm,Household member owns other property: Commercial property,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optdk,Household member owns other property: Dont know,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optfarm,Household member owns other property: Farms,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optnone,Household member owns other property: None of the above,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optoh,Household member owns other property: Other houses and units (inc investment property),0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optos,Household member owns other property: Other,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optrf,Household member owns other property: Refused,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optus,Household member owns other property: Unsure what type,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,optvacl,Household member owns other property: Vacant land,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Wealth - Other Property,opvalue,Approximate value of other properties today [weighted topcode],0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Job Satisfaction,jbmsall,Overall job satisfaction,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Job Satisfaction,jbmsflx,The flexibility to balance work and non-work commitments satisfaction,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Job Satisfaction,jbmshrs,The hours you work satisfaction,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Job Satisfaction,jbmssec,Job security satisfaction,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Job Satisfaction,jbmspay,Total pay satisfaction,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Job Satisfaction,jbmswrk,The work itself satisfaction,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Life Satisfaction,losat,Satisfaction - How satisfied are you with your life,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Life Satisfaction,losatfs,Satisfaction - Your financial situation,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Life Satisfaction,losatyh,Satisfaction - Your health,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Life Satisfaction,losatft,Satisfaction - The amount of free time you have,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Life Satisfaction,losateo,Satisfaction - Your employment opportunities,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Life Satisfaction,losatlc,Satisfaction - Feeling part of your local community,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Retirement reasons,rtmrea,Main reason for retiring,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreaep,What were your reasons for retiring - Became eligible for the age pension,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreavr,What were your reasons for retiring - Offered reasonable financial terms to retire early or accept a voluntary redundancy,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreafa,What were your reasons for retiring - Superannuation rules made it financially advantageous to retire at that time,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreaca,What were your reasons for retiring - Could afford to retire / Had enough income,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreasi,What were your reasons for retiring - Spouses / partners income enabled me to retire,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreamr,What were your reasons for retiring - Made redundant / Dismissed / Had no choice,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreara,What were your reasons for retiring - Reached compulsory retirement age,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreanj,What were your reasons for retiring - Could not find another job,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreaws,"What were your reasons for retiring - Fed up with working / work stresses, demands",0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreape,What were your reasons for retiring - Pressure from employer or others at work,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreaho,What were your reasons for retiring - Own ill health,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreahf,What were your reasons for retiring - Ill health of other family member,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreahs,What were your reasons for retiring - Ill health of spouse / partner,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreapr,What were your reasons for retiring - Partner had just retired or was about to retire,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreasw,What were your reasons for retiring - Spouse / partner wanted me to retire,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreatf,What were your reasons for retiring - To spend more time with other family members,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreats,What were your reasons for retiring - To spend more time with spouse / partner,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtrealt,What were your reasons for retiring - To have more personal / leisure time,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreach,What were your reasons for retiring - To have children/ start family/ to care for children,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtrearf,What were your reasons for retiring - Refused,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreane,What were your reasons for retiring - NEI to classify,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreano,What were your reasons for retiring - None of these,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreaos,What were your reasons for retiring - Other reason,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+Retirement reasons,rtreadn,What were your reasons for retiring - Dont know,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0
