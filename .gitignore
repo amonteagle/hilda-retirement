@@ -1,3 +1,7 @@
 # Ignore raw data files
-*.csv
 *.sas7bdat
+
+# Ignore folders
+data/raw_csv/
+data/raw_sas/
+data/processed/
