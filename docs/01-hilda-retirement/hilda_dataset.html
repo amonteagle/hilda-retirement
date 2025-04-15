@@ -8130,7 +8130,7 @@ Major Life Events          16
 Retirement                  6
 Retirement reasons         25
 Wealth - Home               2
-Wealth - Other Property    17
+Wealth - Other Property     9
 Wealth - Superannuation     8
 Name: Variable, dtype: int64</pre>
 </div>
@@ -8194,6 +8194,7 @@ Name: Variable, dtype: int64</pre>
         <span class="n">cols_temp</span> <span class="o">=</span> <span class="n">letter</span> <span class="o">+</span> <span class="n">dfcols</span><span class="p">[</span><span class="s1">'Variable'</span><span class="p">]</span>
         <span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'xwaveid'</span><span class="p">]</span> <span class="c1"># list of columns with added wave letter</span>
         <span class="n">cols_original</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'xwaveid'</span><span class="p">]</span> <span class="c1"># list of columns</span>
+        
         <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cols_temp</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">hilda</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
                 <span class="n">cols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
@@ -8240,15 +8241,15 @@ Name: Variable, dtype: int64</pre>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 410658 entries, 0 to 410657
-Columns: 121 entries, ('xwaveid',) to ('rtpage',)
-dtypes: float64(119), object(2)
-memory usage: 379.1+ MB
+Columns: 113 entries, ('xwaveid',) to ('rtpage',)
+dtypes: float64(111), object(2)
+memory usage: 354.0+ MB
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b68538c0-2959-4e40-bc32-e53e7e774900">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d7fc80a4-e6c8-4601-96d9-ada54e5fe127">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8256,67 +8257,14 @@ memory usage: 379.1+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># View column listing</span>
-<span class="n">cols</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">hilda_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[('xwaveid',), ('hgsex',), ('hhiage',), ('anbcob',), ('edhigh1',), ('esempdt',), ('jbhruc',), ('jbmo61',), ('jbmi61',), ('rtage',), ('rtcomp',), ('tcr',), ('lshrcar',), ('hhtype',), ('hsmgpd',), ('hsfrea',), ('hsllord',), ('hhsad10',), ('hhsec10',), ('hhsed10',), ('hhsra',), ('gh1',), ('helth',), ('helthwk',), ('bncap',), ('bncdsp',), ('wsfei',), ('bncpeni',), ('hsdebti',), ('hsvalui',), ('jbmsall',), ('jbmsflx',), ('jbmshrs',), ('jbmssec',), ('jbmspay',), ('jbmswrk',), ('losat',), ('losatfs',), ('losatyh',), ('losatft',), ('losateo',), ('losatlc',), ('wave',), ('aneab',), ('mrcms',), ('ledfr',), ('ledrl',), ('ledsc',), ('lefni',), ('lefnw',), ('lefrd',), ('leinf',), ('leins',), ('lejob',), ('lemar',), ('lemvd',), ('leprm',), ('lercl',), ('lertr',), ('lesep',), ('hstenr',), ('sacfnd',), ('sacfnda',), ('saest',), ('pwsupri',), ('pwsuprt',), ('pwsupwi',), ('pwsupwk',), ('opdt',), ('opvalue',), ('rtcage',), ('rtmrea',), ('rtreaep',), ('rtreavr',), ('rtreafa',), ('rtreaca',), ('rtreasi',), ('rtreamr',), ('rtreara',), ('rtreanj',), ('rtreaws',), ('rtreape',), ('rtreaho',), ('rtreahf',), ('rtreahs',), ('rtreapr',), ('rtreasw',), ('rtreatf',), ('rtreats',), ('rtrealt',), ('rtreach',), ('rtrearf',), ('rtreane',), ('rtreano',), ('rtreaos',), ('rtreadn',), ('rtcompn',), ('hencam',), ('hercam',), ('sartpw',), ('opchk',), ('opnum',), ('oprntn',), ('oprnty',), ('opt2hnr',), ('opt2hr',), ('optcomm',), ('optfarm',), ('optnone',), ('optoh',), ('optos',), ('optus',), ('optvacl',), ('gcecf',), ('ledhm',), ('lsinthm',), ('wsfes',), ('savaln2',), ('optdk',), ('optrf',), ('rtpage',)]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f8b027c0-73fd-4a9b-b63d-cf0711618e7b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Cleanup the column names</span>
 <span class="n">colnew</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">hilda_df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
     <span class="n">colnew</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">colnew</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['xwaveid', 'hgsex', 'hhiage', 'anbcob', 'edhigh1', 'esempdt', 'jbhruc', 'jbmo61', 'jbmi61', 'rtage', 'rtcomp', 'tcr', 'lshrcar', 'hhtype', 'hsmgpd', 'hsfrea', 'hsllord', 'hhsad10', 'hhsec10', 'hhsed10', 'hhsra', 'gh1', 'helth', 'helthwk', 'bncap', 'bncdsp', 'wsfei', 'bncpeni', 'hsdebti', 'hsvalui', 'jbmsall', 'jbmsflx', 'jbmshrs', 'jbmssec', 'jbmspay', 'jbmswrk', 'losat', 'losatfs', 'losatyh', 'losatft', 'losateo', 'losatlc', 'wave', 'aneab', 'mrcms', 'ledfr', 'ledrl', 'ledsc', 'lefni', 'lefnw', 'lefrd', 'leinf', 'leins', 'lejob', 'lemar', 'lemvd', 'leprm', 'lercl', 'lertr', 'lesep', 'hstenr', 'sacfnd', 'sacfnda', 'saest', 'pwsupri', 'pwsuprt', 'pwsupwi', 'pwsupwk', 'opdt', 'opvalue', 'rtcage', 'rtmrea', 'rtreaep', 'rtreavr', 'rtreafa', 'rtreaca', 'rtreasi', 'rtreamr', 'rtreara', 'rtreanj', 'rtreaws', 'rtreape', 'rtreaho', 'rtreahf', 'rtreahs', 'rtreapr', 'rtreasw', 'rtreatf', 'rtreats', 'rtrealt', 'rtreach', 'rtrearf', 'rtreane', 'rtreano', 'rtreaos', 'rtreadn', 'rtcompn', 'hencam', 'hercam', 'sartpw', 'opchk', 'opnum', 'oprntn', 'oprnty', 'opt2hnr', 'opt2hr', 'optcomm', 'optfarm', 'optnone', 'optoh', 'optos', 'optus', 'optvacl', 'gcecf', 'ledhm', 'lsinthm', 'wsfes', 'savaln2', 'optdk', 'optrf', 'rtpage']
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5e41109b-5925-42e1-9718-dfda2db49ff8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">hilda_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">colnew</span>
+<span class="n">hilda_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">colnew</span>
+
+<span class="c1"># Cleanup the identifier</span>
+<span class="n">hilda_df</span><span class="p">[</span><span class="s1">'xwaveid'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'xwaveid'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">"[\'b]"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">hilda_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -8328,7 +8276,7 @@ memory usage: 379.1+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8359,22 +8307,22 @@ memory usage: 379.1+ MB
 <th>jbmi61</th>
 <th>rtage</th>
 <th>...</th>
-<th>optus</th>
-<th>optvacl</th>
+<th>oprntn</th>
+<th>oprnty</th>
+<th>opt2hnr</th>
+<th>opt2hr</th>
 <th>gcecf</th>
 <th>ledhm</th>
 <th>lsinthm</th>
 <th>wsfes</th>
 <th>savaln2</th>
-<th>optdk</th>
-<th>optrf</th>
 <th>rtpage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>0</th>
-<td>b'0100001'</td>
+<td>0100001</td>
 <td>1.0</td>
 <td>49.0</td>
 <td>3.0</td>
@@ -8398,7 +8346,7 @@ memory usage: 379.1+ MB
 </tr>
 <tr>
 <th>1</th>
-<td>b'0100002'</td>
+<td>0100002</td>
 <td>2.0</td>
 <td>49.0</td>
 <td>1.0</td>
@@ -8422,7 +8370,7 @@ memory usage: 379.1+ MB
 </tr>
 <tr>
 <th>2</th>
-<td>b'0100003'</td>
+<td>0100003</td>
 <td>1.0</td>
 <td>49.0</td>
 <td>1.0</td>
@@ -8446,7 +8394,7 @@ memory usage: 379.1+ MB
 </tr>
 <tr>
 <th>3</th>
-<td>b'0100004'</td>
+<td>0100004</td>
 <td>2.0</td>
 <td>39.0</td>
 <td>2.0</td>
@@ -8470,7 +8418,7 @@ memory usage: 379.1+ MB
 </tr>
 <tr>
 <th>4</th>
-<td>b'0100005'</td>
+<td>0100005</td>
 <td>2.0</td>
 <td>16.0</td>
 <td>1.0</td>
@@ -8494,7 +8442,7 @@ memory usage: 379.1+ MB
 </tr>
 </tbody>
 </table>
-<p>5 rows × 121 columns</p>
+<p>5 rows × 113 columns</p>
 </div>
 </div>
 </div>
@@ -8505,11 +8453,543 @@ memory usage: 379.1+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Save output to csv</span>
 <span class="n">hilda_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'../data/processed/hilda_combined.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e9b1d0f3-36cd-4612-be63-39c941a83308">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<br/>
+<br/>
+<h3 id="Step-4.-Apply-Data-Dictionary">Step 4. Apply Data Dictionary<a class="anchor-link" href="#Step-4.-Apply-Data-Dictionary">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1b2fde25-69db-4bea-a127-c1f599afd8eb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create new data frame</span>
+<span class="n">num_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'hhiage'</span><span class="p">,</span><span class="s1">'rtage'</span><span class="p">,</span><span class="s1">'rtcage'</span><span class="p">,</span><span class="s1">'rtpage'</span><span class="p">,</span> <span class="s1">'hhsad10'</span><span class="p">,</span> <span class="s1">'hhsec10'</span><span class="p">,</span><span class="s1">'hhsed10'</span><span class="p">,</span><span class="s1">'tcr'</span><span class="p">,</span> 
+            <span class="s1">'jbhruc'</span><span class="p">,</span><span class="s1">'wsfei'</span><span class="p">,</span><span class="s1">'wsfes'</span><span class="p">,</span><span class="s1">'bncpeni'</span><span class="p">,</span><span class="s1">'hsdebti'</span><span class="p">,</span><span class="s1">'hsvalui'</span><span class="p">,</span><span class="s1">'saest'</span><span class="p">,</span><span class="s1">'sacfnda'</span><span class="p">,</span>
+            <span class="s1">'pwsupri'</span><span class="p">,</span><span class="s1">'pwsuprt'</span><span class="p">,</span><span class="s1">'pwsupwi'</span><span class="p">,</span><span class="s1">'pwsupwk'</span><span class="p">,</span><span class="s1">'opdt'</span><span class="p">,</span><span class="s1">'opnum'</span><span class="p">,</span><span class="s1">'oprntn'</span><span class="p">,</span><span class="s1">'opvalue'</span><span class="p">,</span>
+            <span class="s1">'gh1'</span><span class="p">,</span> <span class="s1">'lshrcar'</span><span class="p">,</span><span class="s1">'jbmsall'</span><span class="p">,</span><span class="s1">'jbmsflx'</span><span class="p">,</span><span class="s1">'jbmshrs'</span><span class="p">,</span><span class="s1">'jbmssec'</span><span class="p">,</span><span class="s1">'jbmspay'</span><span class="p">,</span><span class="s1">'jbmswrk'</span><span class="p">,</span>
+            <span class="s1">'losat'</span><span class="p">,</span><span class="s1">'losatfs'</span><span class="p">,</span><span class="s1">'losatyh'</span><span class="p">,</span><span class="s1">'losatft'</span><span class="p">,</span><span class="s1">'losateo'</span><span class="p">,</span><span class="s1">'losatlc'</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="n">num_cols</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Rename columns</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'hhiage'</span>  <span class="p">:</span> <span class="s1">'age'</span><span class="p">,</span>
+                        <span class="s1">'rtage'</span>   <span class="p">:</span> <span class="s1">'retirement_age'</span><span class="p">,</span>
+                        <span class="s1">'rtcage'</span>  <span class="p">:</span> <span class="s1">'age_completely_retired'</span><span class="p">,</span>
+                        <span class="s1">'rtpage'</span>  <span class="p">:</span> <span class="s1">'age_partially_retired'</span><span class="p">,</span>
+                    
+                        <span class="s1">'hhsad10'</span> <span class="p">:</span>	<span class="s1">'area_seifa_irsad'</span><span class="p">,</span>
+                        <span class="s1">'hhsec10'</span> <span class="p">:</span>	<span class="s1">'area_seifa_ier'</span><span class="p">,</span>
+                        <span class="s1">'hhsed10'</span> <span class="p">:</span>	<span class="s1">'area_seifa_ieo'</span><span class="p">,</span>
+
+                        <span class="s1">'tcr'</span>     <span class="p">:</span> <span class="s1">'children_resident'</span><span class="p">,</span>
+                        <span class="s1">'jbhruc'</span>  <span class="p">:</span> <span class="s1">'work_hours'</span><span class="p">,</span>
+                        <span class="s1">'wsfei'</span>   <span class="p">:</span> <span class="s1">'salary_wages'</span><span class="p">,</span>
+                        <span class="s1">'wsfes'</span>   <span class="p">:</span> <span class="s1">'salary_wages_incl_salsac'</span><span class="p">,</span>
+                        <span class="s1">'bncpeni'</span> <span class="p">:</span> <span class="s1">'weekly_aged_pension'</span><span class="p">,</span>
+                        <span class="s1">'hsdebti'</span> <span class="p">:</span> <span class="s1">'total_home_debt'</span><span class="p">,</span>
+                        <span class="s1">'hsvalui'</span> <span class="p">:</span> <span class="s1">'home_value_imputed'</span><span class="p">,</span>
+
+                        <span class="s1">'saest'</span>   <span class="p">:</span> <span class="s1">'super_value'</span><span class="p">,</span>
+                        <span class="s1">'sacfnda'</span> <span class="p">:</span> <span class="s1">'super_funds_value'</span><span class="p">,</span>
+                        <span class="s1">'pwsupri'</span> <span class="p">:</span> <span class="s1">'super_retired_imputed'</span><span class="p">,</span> 
+                        <span class="s1">'pwsuprt'</span> <span class="p">:</span> <span class="s1">'super_retired'</span><span class="p">,</span> 
+                        <span class="s1">'pwsupwi'</span> <span class="p">:</span> <span class="s1">'super_notretired_imputed'</span><span class="p">,</span>
+                        <span class="s1">'pwsupwk'</span> <span class="p">:</span> <span class="s1">'super_notretired'</span><span class="p">,</span> 
+
+                        <span class="s1">'opdt'</span>   <span class="p">:</span> <span class="s1">'otherprop_debt'</span><span class="p">,</span> 
+                        <span class="s1">'opnum'</span>  <span class="p">:</span> <span class="s1">'otherprop_count'</span><span class="p">,</span> 
+                        <span class="s1">'oprntn'</span> <span class="p">:</span> <span class="s1">'otherprop_count_earned_rent'</span><span class="p">,</span> 
+                        <span class="s1">'opvalue'</span><span class="p">:</span> <span class="s1">'otherprop_value'</span><span class="p">,</span>  
+
+                        <span class="s1">'gh1'</span>     <span class="p">:</span> <span class="s1">'self_assessed_health_1-5'</span><span class="p">,</span> 
+                        <span class="s1">'lshrcar'</span> <span class="p">:</span> <span class="s1">'hours_caring_per_week'</span><span class="p">,</span>
+                        
+                        <span class="s1">'jbmsall'</span> <span class="p">:</span>	<span class="s1">'job satisfaction_overall'</span><span class="p">,</span>
+                        <span class="s1">'jbmsflx'</span> <span class="p">:</span>	<span class="s1">'job satisfaction_flexibility'</span><span class="p">,</span>
+                        <span class="s1">'jbmshrs'</span> <span class="p">:</span>	<span class="s1">'job satisfaction_hours'</span><span class="p">,</span>
+                        <span class="s1">'jbmssec'</span> <span class="p">:</span> <span class="s1">'job satisfaction_security'</span><span class="p">,</span>
+                        <span class="s1">'jbmspay'</span> <span class="p">:</span>	<span class="s1">'job satisfaction_pay'</span><span class="p">,</span>
+                        <span class="s1">'jbmswrk'</span> <span class="p">:</span>	<span class="s1">'job satisfaction_work'</span><span class="p">,</span>
+                        
+                        <span class="s1">'losat'</span>   <span class="p">:</span>	<span class="s1">'satisfaction_life'</span><span class="p">,</span>
+                        <span class="s1">'losatfs'</span> <span class="p">:</span>	<span class="s1">'satisfaction_financial_situation'</span><span class="p">,</span>
+                        <span class="s1">'losatyh'</span> <span class="p">:</span>	<span class="s1">'satisfaction_health'</span><span class="p">,</span>
+                        <span class="s1">'losatft'</span> <span class="p">:</span>	<span class="s1">'satisfaction_free_time'</span><span class="p">,</span>
+                        <span class="s1">'losateo'</span> <span class="p">:</span>	<span class="s1">'satisfaction_employment_opportunities'</span><span class="p">,</span>
+                        <span class="s1">'losatlc'</span> <span class="p">:</span>	<span class="s1">'satisfaction_part_of_community'</span>
+                       <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=70905144-7e15-43e4-b022-0f40a4e7e7fc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - employment and education</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'occupation_group'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'jbmo61'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>  <span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span>
+                                             <span class="o">-</span><span class="mi">4</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span>
+                                             <span class="o">-</span><span class="mi">7</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span>
+                                              <span class="mi">1</span><span class="p">:</span> <span class="s1">'Managers'</span><span class="p">,</span>
+                                              <span class="mi">2</span><span class="p">:</span> <span class="s1">'Professionals'</span><span class="p">,</span>
+                                              <span class="mi">3</span><span class="p">:</span> <span class="s1">'Technicians and Trades Workers'</span><span class="p">,</span>
+                                              <span class="mi">4</span><span class="p">:</span> <span class="s1">'Community and Personal Service Workers'</span><span class="p">,</span>
+                                              <span class="mi">5</span><span class="p">:</span> <span class="s1">'Clerical and Administrative Workers'</span><span class="p">,</span>
+                                              <span class="mi">6</span><span class="p">:</span> <span class="s1">'Sales Workers'</span><span class="p">,</span>
+                                              <span class="mi">7</span><span class="p">:</span> <span class="s1">'Machinery Operators and Drivers'</span><span class="p">,</span>
+                                              <span class="mi">8</span><span class="p">:</span> <span class="s1">'Labourers'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'industry'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'jbmi61'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+                                       <span class="mi">1</span>  <span class="p">:</span><span class="s1">'Agriculture, Forestry and Fishing'</span><span class="p">,</span>
+                                       <span class="mi">10</span> <span class="p">:</span><span class="s1">'Information Media and Telecommunications'</span><span class="p">,</span>
+                                       <span class="mi">11</span> <span class="p">:</span><span class="s1">'Financial and Insurance Services'</span><span class="p">,</span>
+                                       <span class="mi">12</span> <span class="p">:</span><span class="s1">'Rental, Hiring and Real Estate Services'</span><span class="p">,</span>
+                                       <span class="mi">13</span> <span class="p">:</span><span class="s1">'Professional, Scientific and Technical Services'</span><span class="p">,</span>
+                                       <span class="mi">14</span> <span class="p">:</span><span class="s1">'Administrative and Support Services'</span><span class="p">,</span>
+                                       <span class="mi">15</span> <span class="p">:</span><span class="s1">'Public Administration and Safety'</span><span class="p">,</span>
+                                       <span class="mi">16</span> <span class="p">:</span><span class="s1">'Education and Training'</span><span class="p">,</span>
+                                       <span class="mi">17</span> <span class="p">:</span><span class="s1">'Health Care and Social Assistance'</span><span class="p">,</span>
+                                       <span class="mi">18</span> <span class="p">:</span><span class="s1">'Arts and Recreation Services'</span><span class="p">,</span>
+                                       <span class="mi">19</span> <span class="p">:</span><span class="s1">'Other Services'</span><span class="p">,</span>
+                                       <span class="mi">2</span> <span class="p">:</span><span class="s1">'Mining'</span><span class="p">,</span>
+                                       <span class="mi">3</span> <span class="p">:</span><span class="s1">'Manufacturing'</span><span class="p">,</span>
+                                       <span class="mi">4</span> <span class="p">:</span><span class="s1">'Electricity, Gas, Water and Waste Services'</span><span class="p">,</span>
+                                       <span class="mi">5</span> <span class="p">:</span><span class="s1">'Construction'</span><span class="p">,</span>
+                                       <span class="mi">6</span> <span class="p">:</span><span class="s1">'Wholesale Trade'</span><span class="p">,</span>
+                                       <span class="mi">7</span> <span class="p">:</span><span class="s1">'Retail Trade'</span><span class="p">,</span>
+                                       <span class="mi">8</span> <span class="p">:</span><span class="s1">'Accommodation and Food Services'</span><span class="p">,</span>
+                                       <span class="mi">9</span> <span class="p">:</span><span class="s1">'Transport, Postal and Warehousing'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'education'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'edhigh1'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">'Postgraduate'</span><span class="p">,</span> <span class="c1">#Masters or PhD</span>
+                                      <span class="mi">2</span><span class="p">:</span> <span class="s1">'Graduate'</span><span class="p">,</span>
+                                      <span class="mi">3</span><span class="p">:</span> <span class="s1">'Bachelor/Diploma'</span><span class="p">,</span> <span class="c1"># 'Bachelor honours',</span>
+                                      <span class="mi">4</span><span class="p">:</span> <span class="s1">'Bachelor/Diploma'</span><span class="p">,</span> <span class="c1"># 'Adv Diploma or Diploma',</span>
+                                      <span class="mi">5</span><span class="p">:</span> <span class="s1">'Year 12 or Certificate III/IV'</span><span class="p">,</span> <span class="c1">#'Certificate III or IV',</span>
+                                      <span class="mi">8</span><span class="p">:</span> <span class="s1">'Year 12 or Certificate III/IV'</span><span class="p">,</span> <span class="c1">#'Year 12',</span>
+                                      <span class="mi">9</span><span class="p">:</span>  <span class="s1">'Year 11 and below'</span><span class="p">,</span>
+                                      <span class="mi">10</span><span class="p">:</span> <span class="s1">'Year 11 and below'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'employment_status'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'esempdt'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span>
+                                              <span class="mi">1</span><span class="p">:</span> <span class="s1">'Employee'</span><span class="p">,</span> 
+                                              <span class="mi">2</span><span class="p">:</span> <span class="s1">'Own business with employees'</span><span class="p">,</span>
+                                              <span class="mi">3</span><span class="p">:</span> <span class="s1">'Own business without employees'</span><span class="p">,</span>
+                                              <span class="mi">4</span><span class="p">:</span> <span class="s1">'Employer/Self-employed with employees'</span><span class="p">,</span> 
+                                              <span class="mi">5</span><span class="p">:</span> <span class="s1">'Employer/Self-employed without employees'</span><span class="p">,</span>
+                                              <span class="mi">6</span><span class="p">:</span> <span class="s1">'Unpaid family worker'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'paid_work'</span><span class="p">]</span> <span class="o">=</span>  <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'esempdt'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'retired_completely_from_workforce'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtcomp'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'retired_completely_not_working'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtcompn'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'retired_completely_from_paid_work'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'sartpw'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=96d02e63-e397-4548-ae6e-203548e6fe82">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - background</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'gender'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hgsex'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s1">'Male'</span><span class="p">,</span> 
+                                 <span class="mi">2</span><span class="p">:</span><span class="s1">'Female'</span><span class="p">})</span>
+
+<span class="c1"># Main English speaking countries are United Kingdom, New Zealand, Canada, USA, Ireland and South Africa</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'country_birth'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'anbcob'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span> <span class="mi">1</span><span class="p">:</span><span class="s1">'Australia'</span><span class="p">,</span> 
+                                         <span class="mi">2</span><span class="p">:</span><span class="s1">'Main English Speaking'</span><span class="p">,</span> 
+                                         <span class="mi">3</span><span class="p">:</span><span class="s1">'Other'</span><span class="p">,</span> 
+                                        <span class="o">-</span><span class="mi">4</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'marital_status'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'mrcms'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span> <span class="mi">1</span><span class="p">:</span><span class="s1">'Married'</span><span class="p">,</span> 
+                                         <span class="mi">2</span><span class="p">:</span><span class="s1">'Separated'</span><span class="p">,</span> 
+                                         <span class="mi">3</span><span class="p">:</span><span class="s1">'Divorced'</span><span class="p">,</span> 
+                                         <span class="mi">4</span><span class="p">:</span><span class="s1">'Widowed'</span><span class="p">,</span> 
+                                         <span class="mi">5</span><span class="p">:</span><span class="s1">'Never married,in relationship'</span><span class="p">,</span> 
+                                         <span class="mi">6</span><span class="p">:</span><span class="s1">'Never married'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'grandchildren_care'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'gcecf'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">'Several times a week'</span><span class="p">,</span> <span class="c1">#'Daily', </span>
+                                             <span class="mi">2</span><span class="p">:</span><span class="s1">'Several times a week'</span><span class="p">,</span> 
+                                             <span class="mi">3</span><span class="p">:</span> <span class="s1">'Once a week to once a month'</span><span class="p">,</span> <span class="c1">#'Once a week', </span>
+                                             <span class="mi">4</span><span class="p">:</span> <span class="s1">'Once a week to once a month'</span><span class="p">,</span> <span class="c1"># 'Once a week to once a month',</span>
+                                             <span class="mi">5</span><span class="p">:</span> <span class="s1">'Rarely'</span><span class="p">,</span> <span class="c1">#'A few times a year', </span>
+                                             <span class="mi">6</span><span class="p">:</span> <span class="s1">'Rarely'</span><span class="p">,</span> <span class="c1">#'Once a year', </span>
+                                             <span class="mi">7</span><span class="p">:</span> <span class="s1">'Rarely'</span><span class="p">,</span> <span class="c1">#'Less than once a year', </span>
+                                             <span class="mi">8</span><span class="p">:</span> <span class="s1">'Never'</span><span class="p">,</span> 
+                                             <span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'receives_age_pension'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'bncap'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'receives_disability_pension'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'bncdsp'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a45600d8-f7c7-4be9-b9dd-618914e2d83e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - life events</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_death_close_friend'</span><span class="p">]</span>         <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'ledfr'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_death_close_relative'</span><span class="p">]</span>       <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'ledrl'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_death_partner_child'</span><span class="p">]</span>        <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'ledsc'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_major_improvement_finances'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lefni'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_major_worsening_finances'</span><span class="p">]</span>   <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lefnw'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_fired_redundant'</span><span class="p">]</span>            <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lefrd'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_illness_family'</span><span class="p">]</span>             <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'leinf'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_illness_personal'</span><span class="p">]</span>           <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'leins'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_changed_job'</span><span class="p">]</span>                <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lejob'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_changed_residence'</span><span class="p">]</span>          <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lemvd'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_retired'</span><span class="p">]</span>                    <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lertr'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_separated_from_spouse'</span><span class="p">]</span>      <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lesep'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_back_together_spouse'</span><span class="p">]</span>       <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lercl'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_weather_disaster'</span><span class="p">]</span>           <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'ledhm'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_got_married'</span><span class="p">]</span>                <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lemar'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'le_promoted'</span><span class="p">]</span>                   <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'leprm'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8f5d15d5-6c6d-4875-8df7-050665a67f04">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - housing</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'housing_type'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hstenr'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span> <span class="mi">1</span><span class="p">:</span> <span class="s1">'Own/currently paying off mortgage'</span><span class="p">,</span>
+                                        <span class="mi">2</span><span class="p">:</span> <span class="s1">'Rent (or pay board)'</span><span class="p">,</span>
+                                        <span class="mi">3</span><span class="p">:</span> <span class="s1">'Involved in a rent-buy scheme'</span><span class="p">,</span>
+                                        <span class="mi">4</span><span class="p">:</span> <span class="s1">'Live here rent free / Life Tenure'</span>
+                                        <span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'home_loan_paid_off'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hsmgpd'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="mi">1</span><span class="p">:</span><span class="s1">'Yes'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s1">'No'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="s1">'n/a'</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="s1">'n/a'</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="s1">'n/a'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'housing_other'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hsfrea'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>   <span class="mi">1</span><span class="p">:</span> <span class="s1">'Housing part of job compensation'</span><span class="p">,</span>
+                                           <span class="mi">2</span><span class="p">:</span> <span class="s1">'Home owned by a relative not living here'</span><span class="p">,</span>
+                                           <span class="mi">3</span><span class="p">:</span> <span class="s1">'Home owned by someone unrelated'</span><span class="p">,</span>
+                                           <span class="mi">4</span><span class="p">:</span> <span class="s1">'Sold home but have not moved yet'</span><span class="p">,</span>
+                                           <span class="mi">5</span><span class="p">:</span> <span class="s1">'Public Housing'</span><span class="p">,</span>
+                                           <span class="mi">6</span><span class="p">:</span> <span class="s1">'Staying with friends or relatives rent-free'</span><span class="p">,</span>
+                                           <span class="mi">7</span><span class="p">:</span> <span class="s1">'Home owned by a household member relative'</span><span class="p">,</span>
+                                           <span class="mi">8</span><span class="p">:</span> <span class="s1">'Life Tenure contract'</span><span class="p">,</span>
+                                           <span class="mi">98</span><span class="p">:</span> <span class="s1">'Other'</span>
+                                        <span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'landlord'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hsllord'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span> <span class="mi">1</span><span class="p">:</span> <span class="s1">'Private rent'</span><span class="p">,</span>
+                                     <span class="mi">2</span><span class="p">:</span> <span class="s1">'Caravan park rent'</span><span class="p">,</span>
+                                     <span class="mi">3</span><span class="p">:</span> <span class="s1">'Government housing authority'</span><span class="p">,</span>
+                                     <span class="mi">4</span><span class="p">:</span> <span class="s1">'Community housing group'</span><span class="p">,</span>
+                                     <span class="mi">5</span><span class="p">:</span> <span class="s1">'Employer'</span><span class="p">,</span>
+                                     <span class="mi">6</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+                                     <span class="mi">7</span><span class="p">:</span> <span class="s1">'Private rent'</span>
+                                    <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7b38ee5e-e348-4c9a-8cd9-8ea06684643f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - household</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'remoteness'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hhsra'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+                                   <span class="mi">0</span><span class="p">:</span> <span class="s1">'Major Cities'</span><span class="p">,</span> <span class="c1">#Major Cities of Australia</span>
+                                   <span class="mi">1</span><span class="p">:</span> <span class="s1">'Inner Regional'</span><span class="p">,</span> <span class="c1">#Inner Regional Australia</span>
+                                   <span class="mi">2</span><span class="p">:</span> <span class="s1">'Outer Regional'</span><span class="p">,</span> <span class="c1">#Outer Regional Australia</span>
+                                   <span class="mi">3</span><span class="p">:</span> <span class="s1">'Remote'</span><span class="p">,</span> <span class="c1">#Remote Australia</span>
+                                   <span class="mi">4</span><span class="p">:</span> <span class="s1">'Remote'</span><span class="p">,</span> <span class="c1">#Very Remote Australia</span>
+                                   <span class="mi">5</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span> <span class="c1">#Migratory - Offshore - Shipping (NSW)</span>
+                                   <span class="mi">9</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span> <span class="c1">#No usual address (NSW)</span>
+                                   <span class="o">-</span><span class="mi">7</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'household_type'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hhtype'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+   <span class="mi">1</span><span class="p">:</span>  <span class="s1">'Couple family wo children or others'</span><span class="p">,</span>
+   <span class="mi">10</span><span class="p">:</span> <span class="s1">'Couple family with ndepchild wo others'</span><span class="p">,</span>
+   <span class="mi">11</span><span class="p">:</span> <span class="s1">'Couple family with ndepchild w other related'</span><span class="p">,</span>
+   <span class="mi">12</span><span class="p">:</span> <span class="s1">'Couple family with ndepchild w other not related'</span><span class="p">,</span>
+   <span class="mi">13</span><span class="p">:</span> <span class="s1">'Lone parent with children &lt; 15 wo others'</span><span class="p">,</span>
+   <span class="mi">14</span><span class="p">:</span> <span class="s1">'Lone parent with children &lt; 15 w other related'</span><span class="p">,</span>
+   <span class="mi">15</span><span class="p">:</span> <span class="s1">'Lone parent with children &lt; 15 w other not related'</span><span class="p">,</span>
+   <span class="mi">16</span><span class="p">:</span> <span class="s1">'Lone parent with depst wo others'</span><span class="p">,</span>
+   <span class="mi">17</span><span class="p">:</span> <span class="s1">'Lone parent with depst w other related'</span><span class="p">,</span>
+   <span class="mi">18</span><span class="p">:</span> <span class="s1">'Lone parent with depst w other not related'</span><span class="p">,</span>
+   <span class="mi">19</span><span class="p">:</span> <span class="s1">'Lone parent with ndepchild wo others'</span><span class="p">,</span>
+   <span class="mi">2</span><span class="p">:</span>  <span class="s1">'Couple family wo children w other related'</span><span class="p">,</span>
+   <span class="mi">20</span><span class="p">:</span> <span class="s1">'Lone parent with ndepchild w other related'</span><span class="p">,</span>
+   <span class="mi">21</span><span class="p">:</span> <span class="s1">'Lone parent with ndepchild w other not related'</span><span class="p">,</span>
+   <span class="mi">22</span><span class="p">:</span>  <span class="s1">'Other related family wo children &lt; 15 or others'</span><span class="p">,</span>
+   <span class="mi">23</span><span class="p">:</span> <span class="s1">'Other related family wo children &lt; 15 w others'</span><span class="p">,</span>
+   <span class="mi">24</span><span class="p">:</span> <span class="s1">'Lone person'</span><span class="p">,</span>
+   <span class="mi">25</span><span class="p">:</span> <span class="s1">'Group household'</span><span class="p">,</span>
+   <span class="mi">26</span><span class="p">:</span> <span class="s1">'Multi family household'</span><span class="p">,</span>
+   <span class="mi">3</span><span class="p">:</span> <span class="s1">'Couple family wo children w other not related'</span><span class="p">,</span>
+   <span class="mi">4</span><span class="p">:</span> <span class="s1">'Couple family with children &lt; 15 wo others'</span><span class="p">,</span>
+   <span class="mi">5</span><span class="p">:</span> <span class="s1">'Couple family with children &lt; 15 w other related'</span><span class="p">,</span>
+   <span class="mi">6</span><span class="p">:</span> <span class="s1">'Couple family with children &lt; 15 w other not related'</span><span class="p">,</span>
+   <span class="mi">7</span><span class="p">:</span> <span class="s1">'Couple family with depst wo others'</span><span class="p">,</span>
+   <span class="mi">8</span><span class="p">:</span> <span class="s1">'Couple family with depst w other related'</span><span class="p">,</span>
+   <span class="mi">9</span><span class="p">:</span> <span class="s1">'Couple family with depst w other not related'</span><span class="p">,</span>
+   <span class="mi">99</span><span class="p">:</span> <span class="s1">'Other'</span> <span class="c1">#Not yet classified</span>
+<span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'household_group'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hhtype'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+        <span class="mi">1</span><span class="p">:</span>  <span class="s1">'Empty nesters'</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s1">'Couple family with children'</span><span class="p">,</span>
+        <span class="mi">11</span><span class="p">:</span> <span class="s1">'Extended family with children'</span><span class="p">,</span>
+        <span class="mi">12</span><span class="p">:</span> <span class="s1">'Extended family with children'</span><span class="p">,</span>
+        <span class="mi">13</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">14</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">15</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">16</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">17</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">18</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">19</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span>  <span class="s1">'Extended family'</span><span class="p">,</span>
+        <span class="mi">20</span><span class="p">:</span> <span class="s1">'Extended family'</span><span class="p">,</span>
+        <span class="mi">21</span><span class="p">:</span> <span class="s1">'Extended family'</span><span class="p">,</span>
+        <span class="mi">22</span><span class="p">:</span> <span class="s1">'Extended family'</span><span class="p">,</span>
+        <span class="mi">23</span><span class="p">:</span> <span class="s1">'Extended family'</span><span class="p">,</span>
+        <span class="mi">24</span><span class="p">:</span> <span class="s1">'Lone person'</span><span class="p">,</span>
+        <span class="mi">25</span><span class="p">:</span> <span class="s1">'Other'</span><span class="p">,</span>
+        <span class="mi">26</span><span class="p">:</span> <span class="s1">'Extended family'</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span>  <span class="s1">'Extended family'</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s1">'Couple family with children'</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s1">'Extended family with children'</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s1">'Extended family with children'</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s1">'Couple family with children'</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s1">'Extended family with children'</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s1">'Extended family with children'</span><span class="p">,</span>
+        <span class="mi">99</span><span class="p">:</span> <span class="s1">'Other'</span> <span class="c1">#Not yet classified</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e4929d2b-ceae-4650-acec-154edf4904ee">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Add columns - retirement reasons</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreaep'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreaep'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Became eligible for the age pension, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreavr'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreavr'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Offered reasonable financial terms to retire early or accept a voluntary redundancy, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreafa'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreafa'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Superannuation rules made it financially advantageous to retire at that time, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreaca'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreaca'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Could afford to retire / Had enough income, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreasi'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreasi'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Spouses / partners income enabled me to retire, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreamr'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreamr'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Made redundant / Dismissed / Had no choice, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreara'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreara'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Reached compulsory retirement age, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreanj'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreanj'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Could not find another job, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreaws'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreaws'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Fed up with working / work stresses, demands, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreape'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreape'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Pressure from employer or others at work, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreaho'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreaho'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Own ill health, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreahf'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreahf'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Ill health of other family member, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreahs'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreahs'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Ill health of spouse / partner, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreapr'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreapr'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Partner had just retired or was about to retire, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreasw'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreasw'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Spouse / partner wanted me to retire, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreatf'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreatf'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'To spend more time with other family members, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreats'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreats'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'To spend more time with spouse / partner, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtrealt'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtrealt'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'To have more personal / leisure time, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreach'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreach'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'To have children/ start family/ to care for children, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtrearf'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtrearf'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Refused, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreane'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreane'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'NEI to classify, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreano'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreano'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'None of these, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreaos'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreaos'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Other reason, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'rtreadn'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtreadn'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Dont know, '</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'rt_retirement_reasons'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreaep'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreavr'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreafa'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreaca'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreasi'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreamr'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreara'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreanj'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreaws'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreape'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreaho'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreahf'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreahs'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreapr'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreasw'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreatf'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreats'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtrealt'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreach'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtrearf'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreane'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreano'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreaos'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'rtreadn'</span><span class="p">]</span> 
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'rt_main_reason'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'rtmrea'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+<span class="mi">1</span><span class="p">:</span> <span class="s1">'Became eligible for the age pension'</span><span class="p">,</span>
+<span class="mi">2</span><span class="p">:</span>	<span class="s1">'Offered reasonable financial terms to retire early or accept a voluntary redundancy'</span><span class="p">,</span>
+<span class="mi">3</span><span class="p">:</span>	<span class="s1">'Superannuation rules made it financially advantageous to retire at that time'</span><span class="p">,</span>
+<span class="mi">4</span><span class="p">:</span>	<span class="s1">'Could afford to retire / Had enough income'</span><span class="p">,</span>
+<span class="mi">5</span><span class="p">:</span>	<span class="s1">'Spouses / partners income enabled me to retire'</span><span class="p">,</span>
+<span class="mi">6</span><span class="p">:</span>	<span class="s1">'Made redundant / Dismissed / Had no choice'</span><span class="p">,</span>
+<span class="mi">7</span><span class="p">:</span>	<span class="s1">'Reached compulsory retirement age'</span><span class="p">,</span>
+<span class="mi">8</span><span class="p">:</span>	<span class="s1">'Could not find another job'</span><span class="p">,</span>
+<span class="mi">9</span><span class="p">:</span>	<span class="s1">'Fed up with working / work stresses, demands'</span><span class="p">,</span>
+<span class="mi">10</span><span class="p">:</span>	<span class="s1">'Pressure from employer or others at work'</span><span class="p">,</span>
+<span class="mi">11</span><span class="p">:</span>	<span class="s1">'Own ill health'</span><span class="p">,</span>
+<span class="mi">12</span><span class="p">:</span>	<span class="s1">'Ill health of spouse / partner'</span><span class="p">,</span>
+<span class="mi">13</span><span class="p">:</span>	<span class="s1">'Ill health of other family member'</span><span class="p">,</span>
+<span class="mi">14</span><span class="p">:</span>	<span class="s1">'Partner had just retired or was about to retire'</span><span class="p">,</span>
+<span class="mi">15</span><span class="p">:</span>	<span class="s1">'Spouse / partner wanted me to retire'</span><span class="p">,</span>
+<span class="mi">16</span><span class="p">:</span>	<span class="s1">'To spend more time with spouse / partner'</span><span class="p">,</span>
+<span class="mi">17</span><span class="p">:</span>	<span class="s1">'To spend more time with other family members'</span><span class="p">,</span>
+<span class="mi">18</span><span class="p">:</span>	<span class="s1">'To have more personal / leisure time'</span><span class="p">,</span>
+<span class="mi">19</span><span class="p">:</span>	<span class="s1">'To have children/ start family/ to care for children'</span><span class="p">,</span>
+<span class="mi">95</span><span class="p">:</span>	<span class="s1">'NEI to classify'</span><span class="p">,</span>
+<span class="mi">98</span><span class="p">:</span>	<span class="s1">'Other'</span><span class="p">,</span>
+<span class="mi">997</span><span class="p">:</span>	<span class="s1">'None of these'</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1db5d174-e961-44f0-897d-be696433774b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - health</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'main_carer_non_res'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hencam'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s1">'main_carer'</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s1">'shared_care'</span><span class="p">,</span>
+    <span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="s1">'n/a'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'main_carer_res'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'hercam'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s1">'main_carer'</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s1">'shared_care'</span><span class="p">,</span>
+    <span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="s1">'n/a'</span><span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'home_internet'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'lsinthm'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'long_term_health_condition'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'helth'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'health_condition_limits_work'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'helthwk'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s1">'Limit type or amount of work'</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s1">'No impact'</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">:</span> <span class="s1">'Not capable of working'</span><span class="p">,</span>
+    <span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="s1">'n/a'</span><span class="p">,</span>
+    <span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="s1">'n/a'</span><span class="p">,</span>
+    <span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="s1">'n/a'</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0e09e1ee-44fd-482c-b4b5-6dbba133b67b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - other</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'superannuation_group'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'savaln2'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+    <span class="o">-</span><span class="mi">4</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> 
+    <span class="o">-</span><span class="mi">3</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span>
+    <span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s1">'0-20k'</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s1">'0-20k'</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">:</span> <span class="s1">'20-50k'</span><span class="p">,</span>
+    <span class="mi">4</span><span class="p">:</span> <span class="s1">'50-100k'</span><span class="p">,</span>
+    <span class="mi">5</span><span class="p">:</span> <span class="s1">'100-200k'</span><span class="p">,</span>
+    <span class="mi">6</span><span class="p">:</span> <span class="s1">'200-500k'</span><span class="p">,</span>
+    <span class="mi">7</span><span class="p">:</span> <span class="s1">'500k-1m'</span><span class="p">,</span>
+    <span class="mi">8</span><span class="p">:</span> <span class="s1">'1m+'</span><span class="p">,</span>
+    <span class="mi">9</span><span class="p">:</span> <span class="s1">'1m+'</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">:</span> <span class="s1">'1m+'</span><span class="p">,</span>
+    <span class="mi">97</span><span class="p">:</span> <span class="s1">'no super'</span><span class="p">})</span> 
+
+<span class="n">df</span><span class="p">[</span><span class="s1">'flag_super_funds'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'sacfnd'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'flag_other_property'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'optoh'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'flag_otherprop_earned_rent'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'oprnty'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'flag_otherprop_not_rented_out'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'opt2hnr'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'flag_otherprop_rented_out'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'opt2hr'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># How well speaks English {-1:'Native speaker', 1:'Very well', 2:'Well', 3:'Not well', 3:'Not at all'}</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'english_fluent'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'aneab'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cd006555-e60c-4bd5-8473-5206098984df">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add columns - year</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hilda_df</span><span class="p">[</span><span class="s1">'wave'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span>
+<span class="s1">'a'</span><span class="p">:</span>	<span class="mi">2001</span><span class="p">,</span>
+<span class="s1">'b'</span><span class="p">:</span>	<span class="mi">2002</span><span class="p">,</span>
+<span class="s1">'c'</span><span class="p">:</span>	<span class="mi">2003</span><span class="p">,</span>
+<span class="s1">'d'</span><span class="p">:</span>	<span class="mi">2004</span><span class="p">,</span>
+<span class="s1">'e'</span><span class="p">:</span>	<span class="mi">2005</span><span class="p">,</span>
+<span class="s1">'f'</span><span class="p">:</span>	<span class="mi">2006</span><span class="p">,</span>
+<span class="s1">'g'</span><span class="p">:</span>	<span class="mi">2007</span><span class="p">,</span>
+<span class="s1">'h'</span><span class="p">:</span>	<span class="mi">2008</span><span class="p">,</span>
+<span class="s1">'i'</span><span class="p">:</span>	<span class="mi">2009</span><span class="p">,</span>
+<span class="s1">'j'</span><span class="p">:</span>	<span class="mi">2010</span><span class="p">,</span>
+<span class="s1">'k'</span><span class="p">:</span>	<span class="mi">2011</span><span class="p">,</span>
+<span class="s1">'l'</span><span class="p">:</span>	<span class="mi">2012</span><span class="p">,</span>
+<span class="s1">'m'</span><span class="p">:</span>	<span class="mi">2013</span><span class="p">,</span>
+<span class="s1">'n'</span><span class="p">:</span>	<span class="mi">2014</span><span class="p">,</span>
+<span class="s1">'o'</span><span class="p">:</span>	<span class="mi">2015</span><span class="p">,</span>
+<span class="s1">'p'</span><span class="p">:</span>	<span class="mi">2016</span><span class="p">,</span>
+<span class="s1">'q'</span><span class="p">:</span>	<span class="mi">2017</span><span class="p">,</span>
+<span class="s1">'r'</span><span class="p">:</span>	<span class="mi">2018</span><span class="p">,</span>
+<span class="s1">'s'</span><span class="p">:</span>	<span class="mi">2019</span><span class="p">,</span>
+<span class="s1">'t'</span><span class="p">:</span>	<span class="mi">2020</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=efc7f21d-7c84-498f-bba5-c6dc8457723f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Save output to csv</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'../data/processed/hilda_transformed.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8520,7 +9000,7 @@ memory usage: 379.1+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
@@ -8537,14 +9017,14 @@ memory usage: 379.1+ MB
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Last updated: Sun Apr 13 2025
+<pre>Last updated: Mon Apr 14 2025
 
 Python implementation: CPython
 Python version       : 3.12.8
 IPython version      : 8.31.0
 
-pandas: 2.2.2
 numpy : 1.26.4
+pandas: 2.2.2
 
 </pre>
 </div>
@@ -8558,7 +9038,7 @@ numpy : 1.26.4
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<br/>
+<h4><br/></h4>
 <br/>
 <br/>
 </div>
